@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Facebook, Instagram, Youtube, ArrowUp } from 'lucide-react';
+import { Zap, ArrowUp, MapPin, Phone, Mail } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -16,7 +16,7 @@ const Footer = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 relative z-10">
-          {/* Logo and Tagline */}
+          {/* Logo and Contact Info */}
           <div className="md:col-span-2 fade-in">
             <div className="flex items-center space-x-2 mb-4 group">
               <div className="flex items-center justify-center w-10 h-10 gradient-blue rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300 card-3d">
@@ -25,16 +25,25 @@ const Footer = () => {
               <span className="text-2xl font-bold group-hover:text-blue-400 transition-colors">WEBNOVA</span>
             </div>
             <p className="text-gray-400 mb-6 text-lg">Lightning-Fast Websites. Built for You.</p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-all duration-200 hover:scale-110">
-                <Facebook className="w-6 h-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-all duration-200 hover:scale-110">
-                <Instagram className="w-6 h-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-all duration-200 hover:scale-110">
-                <Youtube className="w-6 h-6" />
-              </a>
+
+            {/* Contact Information */}
+            <div className="space-y-3">
+              <div className="flex items-center space-x-3 text-gray-400">
+                <MapPin className="w-5 h-5 text-blue-400" />
+                <span>Atlanta, Georgia</span>
+              </div>
+              <div className="flex items-center space-x-3 text-gray-400">
+                <Phone className="w-5 h-5 text-blue-400" />
+                <a href="tel:4705255650" className="hover:text-blue-400 transition-colors">
+                  (470) 525-5650
+                </a>
+              </div>
+              <div className="flex items-center space-x-3 text-gray-400">
+                <Mail className="w-5 h-5 text-blue-400" />
+                <a href="mailto:info.webbnova.org" className="hover:text-blue-400 transition-colors">
+                  info.webbnova.org
+                </a>
+              </div>
             </div>
           </div>
 
@@ -53,9 +62,8 @@ const Footer = () => {
           <div className="fade-in" style={{ animationDelay: '0.4s' }}>
             <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-blue-400 transition-all duration-200 hover:translate-x-1">Terms of Service</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-blue-400 transition-all duration-200 hover:translate-x-1">Privacy Policy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-blue-400 transition-all duration-200 hover:translate-x-1">Refund Policy</a></li>
+              <li><a href="/terms-of-service" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-all duration-200 hover:translate-x-1">Terms of Service</a></li>
+              <li><a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-all duration-200 hover:translate-x-1">Privacy Policy</a></li>
             </ul>
           </div>
         </div>
