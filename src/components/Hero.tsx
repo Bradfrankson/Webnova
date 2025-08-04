@@ -25,7 +25,7 @@ const Hero = () => {
           
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight fade-in" style={{ animationDelay: '0.2s' }}>
             Your Website.<br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 animate-pulse-glow">Built for Free</span> in 2 Days.
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 animate-pulse-glow">Built for Free</span> in 24hrs.
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto fade-in" style={{ animationDelay: '0.4s' }}>

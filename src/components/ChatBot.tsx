@@ -252,7 +252,7 @@ const ChatBot: React.FC = () => {
     } else if (lowerResponse.includes('asap') || lowerResponse.includes('fast')) {
       setCurrentStep('urgent-timeline');
       setTimeout(() => {
-        addBotMessage("I love the urgency! We can definitely get you online fast. Our record is 3 days for a full website. Let's jump on a quick call to make this happen ASAP! ⚡", 'cta');
+        addBotMessage("I love the urgency! We can definitely get you online fast. Our record is 24 hours for a full website. Let's jump on a quick call to make this happen ASAP! ⚡", 'cta');
       }, 1500);
     } else if (lowerResponse.includes('flexible') || lowerResponse.includes('process')) {
       setCurrentStep('process-interest');
@@ -312,7 +312,7 @@ const ChatBot: React.FC = () => {
     } else if (lowerMessage.includes('price') || lowerMessage.includes('cost') || lowerMessage.includes('how much') || lowerMessage.includes('expensive')) {
       addBotMessage("Ah, the money question! Here's the cool part - we build your website completely free. No upfront costs, no hidden fees. We only succeed when you do. What kind of business are we talking about?");
     } else if (lowerMessage.includes('time') || lowerMessage.includes('how long') || lowerMessage.includes('when') || lowerMessage.includes('fast')) {
-      addBotMessage("Good question! Most websites are done in 7-14 days. We move pretty fast because I know you're excited to get online! Are you in a rush or do we have some time to make it perfect?");
+      addBotMessage("Good question! Most websites are done in 24hrs. We move pretty fast because I know you're excited to get online! Are you in a rush or do we have some time to make it perfect?");
     } else if (lowerMessage.includes('ai') || lowerMessage.includes('assistant') || lowerMessage.includes('chatbot') || lowerMessage.includes('automation')) {
       addBotMessage("Oh, you're interested in the AI stuff! Smart choice. Our AI assistant is like having a super-smart employee who never sleeps, never gets sick, and always knows what to say. Want to know more about how it works?");
     } else if (lowerMessage.includes('example') || lowerMessage.includes('portfolio') || lowerMessage.includes('see') || lowerMessage.includes('show')) {

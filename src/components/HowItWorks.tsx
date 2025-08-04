@@ -12,7 +12,7 @@ const HowItWorks = () => {
     {
       icon: Hammer,
       title: 'We Build Everything',
-      description: 'Design, hosting, chatbot, domain — done in 2 days.',
+      description: 'Design, hosting, chatbot, domain — done in 24hrs.',
       number: '2'
     },
     {

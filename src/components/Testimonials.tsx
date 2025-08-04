@@ -17,7 +17,7 @@ const Testimonials = () => {
       results: {
         customers: '+15',
         orders: '+40%',
-        time: '2 days'
+        time: '24hrs'
       },
       initials: 'SM'
     },
@@ -31,7 +31,7 @@ const Testimonials = () => {
       results: {
         leads: '+25',
         projects: '+60%',
-        time: '2 days'
+        time: '24hrs'
       },
       initials: 'MR'
     },
@@ -45,7 +45,7 @@ const Testimonials = () => {
       results: {
         bookings: '+35',
         clients: '+50%',
-        time: '2 days'
+        time: '24hrs'
       },
       initials: 'LT'
     }
@@ -93,7 +93,7 @@ const Testimonials = () => {
             Real Businesses. <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Real Results.</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            See how small businesses transformed their online presence and grew their customer base in just 2 days
+            See how small businesses transformed their online presence and grew their customer base in just 24hrs
           </p>
         </div>
 
@@ -242,7 +242,7 @@ const Testimonials = () => {
               Ready to Join These Success Stories?
             </h3>
             <p className="text-blue-100 mb-6 text-lg">
-              Get your professional website in just 2 days - completely free until you're happy
+              Get your professional website in just 24hrs - completely free until you're happy
             </p>
             <a 
               href="https://api.leadconnectorhq.com/widget/booking/oyLr4DgEEt5IZrB0FHMP" 

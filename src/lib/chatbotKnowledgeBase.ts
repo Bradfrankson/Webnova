@@ -21,7 +21,7 @@ export const WEBNOVA_KNOWLEDGE_BASE = {
         "Bring any idea to life",
         "Free upfront - no payment required",
         "Unlimited revisions included",
-        "48-hour delivery after discovery call"
+        "24-hour delivery after discovery call"
       ]
     },
     aiIntegration: {
@@ -84,7 +84,7 @@ ABOUT WEBNOVA:
 - No templates - every website is 100% original and custom-designed
 - We can copy any design, match competitor sites, or bring any idea to life
 - Every website includes a smart AI agent that handles live chat, captures leads, and converts visitors 24/7
-- Delivery in just 48 hours after the discovery call
+- Delivery in just 24 hours after the discovery call
 - Includes unlimited revisions, 3 months free hosting, and 1 free domain for 1 year
 - We serve businesses in any industry: restaurants, salons, contractors, real estate, healthcare, etc.
 
@@ -171,7 +171,7 @@ export function getIndustryTalkingPoints(industry: string): string[] {
 export const FAQ_RESPONSES = {
   pricing: "Great question! Our pricing is always affordable and transparent, but it depends on your specific needs. The best part? You don't pay anything upfront - only if you're 100% happy with the final result. I'd love to have one of our specialists give you exact pricing on a quick call. Would you like me to set that up?",
   
-  timeline: "We deliver websites in just 48 hours after your discovery call! That's one of the things that makes Webnova special - we're incredibly fast without sacrificing quality.",
+  timeline: "We deliver websites in just 24 hours after your discovery call! That's one of the things that makes Webnova special - we're incredibly fast without sacrificing quality.",
   
   revisions: "Absolutely! We include unlimited revisions because we want you to be 100% happy. We'll keep refining until it's exactly what you envisioned.",
   

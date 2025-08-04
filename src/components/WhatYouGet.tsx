@@ -52,7 +52,7 @@ const WhatYouGet = () => {
         <div className="text-center relative z-10">
           <div className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 max-w-2xl mx-auto card-3d fade-in" style={{ animationDelay: '1s' }}>
             <p className="text-xl text-gray-600 font-semibold">
-            All delivered within 48 hours. <span className="text-blue-600">No upfront cost.</span>
+            All delivered within 24 hours. <span className="text-blue-600">No upfront cost.</span>
           </p>
           </div>
         </div>

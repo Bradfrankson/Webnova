@@ -26,7 +26,7 @@ const WhyWebnova = () => {
             <div className="bg-gradient-to-br from-blue-100 to-blue-200 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-xl transition-all duration-300 card-3d">
               <Zap className="w-10 h-10 text-blue-600 group-hover:scale-110 transition-transform" />
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">Delivered in 2 Days</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">Delivered in 24hrs</h3>
             <p className="text-gray-600 text-lg">No delays. No DIY. Just results.</p>
           </div>
 

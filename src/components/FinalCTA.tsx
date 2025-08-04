@@ -23,7 +23,7 @@ const FinalCTA = () => {
             Let's Build Your Site. <span className="text-blue-200">For Free.</span>
           </h2>
           <p className="text-xl text-blue-100 mb-12 fade-in" style={{ animationDelay: '0.4s' }}>
-            Ready to get your professional website in just 2 days? Let's chat about your business.
+            Ready to get your professional website in just 24hrs? Let's chat about your business.
           </p>
         </div>
 
@@ -86,7 +86,7 @@ const FinalCTA = () => {
                   <Calendar className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-2">48-Hour Build Sprint</h4>
+                  <h4 className="font-semibold mb-2">24-Hour Build Sprint</h4>
                   <p className="text-blue-100">Our team designs, builds, and optimizes your complete website.</p>
                 </div>
               </div>
@@ -109,7 +109,7 @@ const FinalCTA = () => {
                   <div className="text-blue-200 text-sm">Websites Delivered</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold">48h</div>
+                  <div className="text-3xl font-bold">24h</div>
                   <div className="text-blue-200 text-sm">Avg Delivery</div>
                 </div>
                 <div>
