@@ -28,6 +28,9 @@ const ThankYou: React.FC = () => {
       window.fbq.queue = [];
       window.fbq.loaded = true;
       window.fbq.version = '2.0';
+      // Fire both events for stub
+      window.fbq('track', 'PageView');
+      window.fbq('track', 'Lead');
     } else {
       window.fbq('track', 'PageView');
       window.fbq('track', 'Lead');
