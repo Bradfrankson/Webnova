@@ -1,27 +1,44 @@
-import React from "react";
 
+import React from "react";
 import { useEffect } from "react";
+
+declare global {
+  interface Window {
+    fbq?: any;
+  }
+}
 
 const ThankYou: React.FC = () => {
   useEffect(() => {
-    // Inject Meta Pixel script
-    const script = document.createElement("script");
-    script.innerHTML = `!function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '734584299538169');
-    fbq('track', 'PageView');
-    fbq('track', 'Lead');`;
-    document.head.appendChild(script);
+    // Only inject if not already present
+    if (!window.fbq) {
+      const script = document.createElement("script");
+      script.async = true;
+      script.src = "https://connect.facebook.net/en_US/fbevents.js";
+      script.onload = () => {
+        window.fbq('init', '734584299538169');
+        window.fbq('track', 'PageView');
+        window.fbq('track', 'Lead');
+      };
+      document.head.appendChild(script);
+      // Add fbq stub
+      window.fbq = function() {
+        window.fbq.callMethod ? window.fbq.callMethod.apply(window.fbq, arguments) : window.fbq.queue.push(arguments);
+      };
+      window.fbq.queue = [];
+      window.fbq.loaded = true;
+      window.fbq.version = '2.0';
+    } else {
+      window.fbq('track', 'PageView');
+      window.fbq('track', 'Lead');
+    }
     // Add noscript fallback
-    const noscript = document.createElement("noscript");
-    noscript.innerHTML = `<img height='1' width='1' style='display:none' src='https://www.facebook.com/tr?id=734584299538169&ev=PageView&noscript=1'/>`;
-    document.head.appendChild(noscript);
+    if (!document.getElementById('fb-pixel-noscript')) {
+      const noscript = document.createElement("noscript");
+      noscript.id = 'fb-pixel-noscript';
+      noscript.innerHTML = `<img height='1' width='1' style='display:none' src='https://www.facebook.com/tr?id=734584299538169&ev=PageView&noscript=1'/>`;
+      document.body.appendChild(noscript);
+    }
   }, []);
 
   return (
