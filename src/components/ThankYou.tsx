@@ -10,31 +10,28 @@ declare global {
 
 const ThankYou: React.FC = () => {
   useEffect(() => {
-    // Only inject if not already present
+    // Initialize Meta Pixel if not present
     if (!window.fbq) {
-      const script = document.createElement("script");
-      script.async = true;
-      script.src = "https://connect.facebook.net/en_US/fbevents.js";
-      script.onload = () => {
-        window.fbq('init', '734584299538169');
-        window.fbq('track', 'PageView');
-        window.fbq('track', 'Lead');
-      };
-      document.head.appendChild(script);
-      // Add fbq stub
       window.fbq = function() {
         window.fbq.callMethod ? window.fbq.callMethod.apply(window.fbq, arguments) : window.fbq.queue.push(arguments);
       };
-      window.fbq.queue = [];
+      window.fbq.push = window.fbq;
       window.fbq.loaded = true;
       window.fbq.version = '2.0';
-      // Fire both events for stub
-      window.fbq('track', 'PageView');
-      window.fbq('track', 'Lead');
-    } else {
-      window.fbq('track', 'PageView');
-      window.fbq('track', 'Lead');
+      window.fbq.queue = [];
     }
+
+    // Load Meta Pixel script
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://connect.facebook.net/en_US/fbevents.js';
+    script.onload = () => {
+      window.fbq('init', '734584299538169');
+      // Track both PageView and Lead events
+      window.fbq('track', 'PageView');
+      window.fbq('track', 'Lead');  // Important: Track conversion event
+    };
+    document.head.appendChild(script);
     // Add noscript fallback
     if (!document.getElementById('fb-pixel-noscript')) {
       const noscript = document.createElement("noscript");

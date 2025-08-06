@@ -67,14 +67,53 @@
       .btn { font-size: 0.95rem; padding: 0.7rem 1.1rem; }
     }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(20px);} to { opacity: 1; transform: translateY(0);} }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Appointment Confirmed | Webnova</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '734584299538169');
+    fbq('track', 'PageView');
+    fbq('track', 'Lead');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=734584299538169&ev=PageView&noscript=1"/></noscript>
+  <!-- End Meta Pixel Code -->
+  <style>
+    html, body { height: 100%; margin: 0; padding: 0; background: #f4f8ff; font-family: 'Segoe UI', Arial, sans-serif; }
+    body { min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+    .container { background: #fff; border-radius: 16px; box-shadow: 0 4px 24px rgba(1, 117, 194, 0.08); padding: 2.5rem 2rem; max-width: 370px; width: 100%; text-align: center; animation: fadeIn 0.8s; }
+    h1 { font-size: 1.7rem; margin-bottom: 1rem; color: #0175C2; font-weight: 600; }
+    p { font-size: 1.05rem; color: #222; margin-bottom: 1rem; }
+    .btn { display: inline-block; background: #0175C2; color: #fff; font-size: 1rem; font-weight: 500; padding: 0.75rem 1.5rem; border: none; border-radius: 8px; text-decoration: none; box-shadow: 0 2px 8px rgba(1,117,194,0.07); transition: background 0.2s; cursor: pointer; }
+    .btn:hover { background: #025fa1; }
+    .trust { margin-top: 2rem; color: #0175C2; font-size: 1.3rem; }
+    .trust-text { font-size: 0.95rem; color: #222; margin-top: 0.3rem; }
+    @media (max-width: 600px) {
+      .container { padding: 1.5rem 0.7rem; max-width: 98vw; }
+      h1 { font-size: 1.2rem; }
+      p { font-size: 0.98rem; }
+      .btn { font-size: 0.95rem; padding: 0.7rem 1.1rem; }
+    }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px);} to { opacity: 1; transform: translateY(0);} }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>✅ You're Booked!</h1>
-    <p>Thanks for scheduling your free website build call. We'll contact you shortly to confirm the details.</p>
-    <div class="note">We build your site for free — no templates, no upfront cost. Just results.</div>
-    <a href="/" class="btn">Back to Homepage</a>
+    <h1>Appointment Confirmed ✅</h1>
+    <p>Your appointment is booked! We'll reach out soon to confirm details and next steps.</p>
+    <a href="/" class="btn">Back to Home</a>
     <div class="trust">★★★★★
       <div class="trust-text">Trusted by small businesses across the U.S.</div>
     </div>
