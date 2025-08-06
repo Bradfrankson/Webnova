@@ -10,28 +10,19 @@ declare global {
 
 const ThankYou: React.FC = () => {
   useEffect(() => {
-    // Initialize Meta Pixel if not present
-    if (!window.fbq) {
-      const script = document.createElement('script');
-      script.innerHTML = `
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window,document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '734584299538169');
-        fbq('track', 'PageView');
-        fbq('track', 'Lead');  // Track conversion event
-      `;
-      document.head.appendChild(script);
-    } else {
-      // If fbq is already initialized, just track the events
-      window.fbq('track', 'PageView');
-      window.fbq('track', 'Lead');
-    }
+    // Add Meta Pixel code
+    !function(f:any,b:any,e:any,v:any,n:any,t:any,s:any)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    window.fbq('init', '734584299538169');
+    window.fbq('track', 'PageView');
+    window.fbq('track', 'Lead');
     // Add noscript fallback
     if (!document.getElementById('fb-pixel-noscript')) {
       const noscript = document.createElement("noscript");
