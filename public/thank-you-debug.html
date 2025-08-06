@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You | Webnova</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: #f4f8ff;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(1, 117, 194, 0.08);
+      padding: 2.5rem 2rem;
+      max-width: 370px;
+      width: 100%;
+      text-align: center;
+      animation: fadeIn 0.8s;
+      border: 2px solid #0175C2;
+    }
+    h1 {
+      font-size: 1.7rem;
+      margin-bottom: 1rem;
+      color: #0175C2;
+      font-weight: 600;
+    }
+    p {
+      font-size: 1.05rem;
+      color: #222;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      background: #0175C2;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(1,117,194,0.07);
+      transition: background 0.2s;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #025fa1;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 1.5rem 0.7rem;
+        max-width: 98vw;
+      }
+      h1 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 0.98rem;
+      }
+      .btn {
+        font-size: 0.95rem;
+        padding: 0.7rem 1.1rem;
+      }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>✅ You're Booked!</h1>
+    <p>Thanks for scheduling your free website strategy call. We’ll be in touch shortly to confirm the details.</p>
+    <a href="/" class="btn">Back to Homepage</a>
+  </div>
+  <script>
+    document.body.style.background = '#f4f8ff';
+    document.body.innerHTML += '<div style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;color:#0175C2;font-size:20px;text-align:center;z-index:9999;">If you see this, the page loaded.</div>';
+  </script>
+</body>
+</html>
