@@ -9,7 +9,7 @@ const WhatYouGet = () => {
     'Free chatbot with local knowledge base',
     'Google Maps, WhatsApp, and Call Button integration',
     'Custom contact form with lead alerts',
-    'SSL secured & SEO-ready',
+    'SSL secured & professionally optimized',
     'One round of post-launch edits',
     'Launch graphic to announce your site on socials'
   ];

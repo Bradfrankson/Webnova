@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Zap, ArrowRight } from 'lucide-react';
 
 const Header = () => {
@@ -6,14 +7,15 @@ const Header = () => {
     <header className="bg-white/95 backdrop-blur-md shadow-lg fixed w-full top-0 z-50 border-b border-gray-100">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center space-x-2 group">
+          <Link to="/" className="flex items-center space-x-2 group">
             <div className="flex items-center justify-center w-10 h-10 gradient-blue rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300 card-3d">
               <Zap className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
             </div>
             <span className="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">WEBNOVA</span>
-          </div>
+          </Link>
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-gray-700 hover:text-blue-600 transition-all duration-200 font-medium hover:scale-105">Home</a>
+            <Link to="/" className="text-gray-700 hover:text-blue-600 transition-all duration-200 font-medium hover:scale-105">Home</Link>
+            <Link to="/pricing" className="text-gray-700 hover:text-blue-600 transition-all duration-200 font-medium hover:scale-105">Pricing</Link>
             <a href="#how-it-works" className="text-gray-700 hover:text-blue-600 transition-all duration-200 font-medium hover:scale-105">How It Works</a>
             <a href="#faq" className="text-gray-700 hover:text-blue-600 transition-all duration-200 font-medium hover:scale-105">FAQ</a>
             <a 

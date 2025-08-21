@@ -58,7 +58,7 @@ const TermsOfService = () => {
               <li>3 months of premium hosting included</li>
               <li>1 year free domain registration</li>
               <li>Mobile-responsive design for all devices</li>
-              <li>Basic SEO optimization and setup</li>
+              <li>Professional content optimization and setup</li>
               <li>SSL certificate and security features</li>
             </ul>
 
